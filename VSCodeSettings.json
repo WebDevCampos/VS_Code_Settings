@@ -136,6 +136,7 @@
   /*Workbench*/
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.labelFormat": "short",
+  "workbench.productIconTheme": "fluent-icons",
   "workbench.colorCustomizations": {
     "editor.lineHighlightBackground": "#1073cf2d",
     "editor.lineHighlightBorder": "#9fced11f"
@@ -157,7 +158,8 @@
   "prettier.htmlWhitespaceSensitivity": "ignore",
   "git.autofetch": true,
   "liveServer.settings.donotShowInfoMsg": true,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "diffEditor.wordWrap": "off",
-  "terminal.integrated.defaultProfile.windows": "Command Prompt",
-  "security.workspace.trust.untrustedFiles": "open",
 }
