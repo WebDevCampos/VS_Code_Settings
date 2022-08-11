@@ -25,7 +25,6 @@
     "other": true,
     "comments": false,
     "strings": false,
-    "html.suggest.html5": true
   },
   "editor.useTabStops": false,
   "editor.inlineSuggest.enabled": true,
@@ -81,7 +80,11 @@
   /*Languages*/
   "[markdown]": {
     "editor.wordWrap": "off",
-    "editor.quickSuggestions": true
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
   },
   "html.format.indentHandlebars": true,
   "[html]": {
@@ -136,7 +139,6 @@
   /*Workbench*/
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.labelFormat": "short",
-  "workbench.productIconTheme": "fluent-icons",
   "workbench.colorCustomizations": {
     "editor.lineHighlightBackground": "#1073cf2d",
     "editor.lineHighlightBorder": "#9fced11f"
@@ -147,6 +149,25 @@
   "extensions.ignoreRecommendations": true,
   "breadcrumbs.enabled": true,
   "terminal.integrated.showExitAlert": false,
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "icon": "terminal-cmd"
+    },
+    "GitBash": {
+      "path": [
+        "D:\\Git\\Git\\bin\\bash.exe"
+      ],
+      "icon": "terminal-bash"
+    },
+  },
   "splitHTMLAttributes.closingBracketOnNewLine": true,
   "splitHTMLAttributes.sortOrder": [
     "id",
@@ -162,4 +183,12 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "diffEditor.wordWrap": "off",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "terminal.integrated.defaultProfile.windows": "GitBash",
 }
