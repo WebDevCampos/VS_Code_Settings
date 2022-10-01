@@ -1,8 +1,6 @@
 {
   /*Editor*/
-  "editor.rulers": [
-    80
-  ],
+  "editor.rulers": [80],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
@@ -24,7 +22,7 @@
   "editor.quickSuggestions": {
     "other": true,
     "comments": false,
-    "strings": false,
+    "strings": false
   },
   "editor.useTabStops": false,
   "editor.inlineSuggest.enabled": true,
@@ -36,106 +34,28 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  /*Code Runner*/
-  "code-runner.executorMap": {
-    "javascript": "node",
-    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "php": "php",
-    "python": "python -u",
-    "csharp": "scriptcs",
-    "vbscript": "cscript //Nologo",
-    "typescript": "ts-node"
-  },
-  /*JS - TS*/
-  "javascript.suggest.autoImports": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "javascript.format.semicolons": "ignore",
-  "javascript.preferences.quoteStyle": "single",
-  "typescript.preferences.quoteStyle": "single",
-  "typescript.suggest.autoImports": true,
-  "typescript.updateImportsOnFileMove.enabled": "never", /*Explorer - Files*/
-  "explorer.compactFolders": false,
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true
-    // "**/node_modules": true
-  },
-  "files.associations": {
-    ".sequelizerc": "javascript",
-    ".stylelintrc": "json",
-    ".prettierrc": "json",
-    "*.tsx": "typescriptreact",
-    ".env.*": "dotenv",
-    "*.json": "jsonc"
-  },
-  "autoimport.filesToScan": "**/*.{js,jsx,ts,tsx}",
-  /*Languages*/
   "[markdown]": {
     "editor.wordWrap": "off",
     "editor.quickSuggestions": {
-      "comments": "on",
-      "strings": "on",
-      "other": "on"
+      "comments": true,
+      "strings": true,
+      "other": true
     }
   },
   "html.format.indentHandlebars": true,
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "css.completion.completePropertyWithSemicolon": true,
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  /*Material Icon*/
-  "material-icon-theme.folders.associations": {
-    "infra": "app",
-    "entities": "class",
-    "domain": "class",
-    "schemas": "class",
-    "typeorm": "database",
-    "repositories": "mappings",
-    "http": "container",
-    "migrations": "tools",
-    "modules": "components",
-    "implementations": "core",
-    "dtos": "typescript",
-    "fakes": "mock",
-    "websockets": "pipe",
-    "protos": "pipe",
-    "grpc": "pipe",
-    "providers": "include",
-    "subscribers": "messages",
-    "useCases": "controller",
-    "kafka": "scripts",
-    "mappers": "meta",
-    "_shared": "shared",
-    "eslint-config": "tools",
-    "kube": "kubernetes"
-  },
-  "material-icon-theme.files.associations": {
-    "ormconfig.json": "database",
-    "tsconfig.json": "tune",
-    "*.proto": "3d",
-    "*.webpack.js": "webpack"
-  },
-  "material-icon-theme.languages.associations": {
-    "dotenv": "tune"
-  },
-  "material-icon-theme.activeIconPack": "nest",
   /*Workbench*/
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.labelFormat": "short",
@@ -162,20 +82,14 @@
       "icon": "terminal-cmd"
     },
     "GitBash": {
-      "path": [
-        "D:\\Git\\Git\\bin\\bash.exe"
-      ],
+      "path": ["E:\\Git\\Git\\bin\\bash.exe"],
       "icon": "terminal-bash"
-    },
+    }
   },
+  "git.enabled": true,
+  "git.path": "E:\\Git\\Git\\bin\\git.exe",
   "splitHTMLAttributes.closingBracketOnNewLine": true,
-  "splitHTMLAttributes.sortOrder": [
-    "id",
-    "class",
-    "style",
-    "data-*",
-    "*"
-  ],
+  "splitHTMLAttributes.sortOrder": ["id", "class", "style", "data-*", "*"],
   "prettier.htmlWhitespaceSensitivity": "ignore",
   "git.autofetch": true,
   "liveServer.settings.donotShowInfoMsg": true,
@@ -183,12 +97,25 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "diffEditor.wordWrap": "off",
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
-  },
   "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.defaultProfile.windows": "GitBash",
+  "code-runner.executorMap": {
+    "code-runner.executorMap": {
+      "javascript": "node",
+      "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+      "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "php": "php",
+      "python": "python -u",
+      "csharp": "scriptcs",
+      "vbscript": "cscript //Nologo",
+      "typescript": "ts-node"
+    },
+    "mysql.path": "E:\\MySQL\\bin\\mysql.exe"
+  },
+  "liveServer.settings.donotVerifyTags": true,
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
-  },
-  "terminal.integrated.defaultProfile.windows": "GitBash",
+  }
 }
