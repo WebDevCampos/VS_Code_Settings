@@ -4,6 +4,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+
   "editor.suggestSelection": "first",
   "editor.semanticHighlighting.enabled": false,
   "editor.renderLineHighlight": "gutter",
@@ -99,23 +100,40 @@
   "diffEditor.wordWrap": "off",
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.defaultProfile.windows": "GitBash",
-  "code-runner.executorMap": {
-    "code-runner.executorMap": {
-      "javascript": "node",
-      "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-      "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-      "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-      "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-      "php": "php",
-      "python": "python -u",
-      "csharp": "scriptcs",
-      "vbscript": "cscript //Nologo",
-      "typescript": "ts-node"
-    },
-    "mysql.path": "E:\\MySQL\\bin\\mysql.exe"
-  },
+
   "liveServer.settings.donotVerifyTags": true,
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
+  },
+  "redhat.telemetry.enabled": true,
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "php.validate.executablePath": "",
+  /*Code Runner*/
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "php": "php",
+    "python": "python -u",
+    "perl": "perl",
+    "perl6": "perl6",
+    "ruby": "ruby",
+    "go": "go run",
+    "lua": "lua",
+    "typescript": "ts-node",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "haskell": "runhaskell",
+    "sass": "sass --style expanded",
+    "scss": "scss --style expanded",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+    "mysql.path": "E:\\MySQL\\bin\\mysql.exe"
   }
 }
