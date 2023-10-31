@@ -24,6 +24,9 @@
   "editor.wordWrap": "bounded",
   "editor.wordWrapColumn": 80,
   "editor.linkedEditing": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -39,6 +42,7 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+
   "editor.quickSuggestions": {
     "other": true,
     "comments": false,
@@ -87,14 +91,10 @@
   "liveServer.settings.donotShowInfoMsg": true,
   "editor.defaultFoldingRangeProvider": "esbenp.prettier-vscode",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "workbench.colorTheme": "Dracula",
 
   /* Configurações do Workbench */
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.labelFormat": "short",
-  "workbench.colorCustomizations": {
-    "editor.lineHighlightBackground": "#1073cf2d",
-    "editor.lineHighlightBorder": "#9fced11f"
-  },
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Dracula"
 }
