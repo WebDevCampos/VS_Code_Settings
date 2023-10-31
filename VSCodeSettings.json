@@ -95,6 +95,7 @@
   /* Configurações do Workbench */
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.labelFormat": "short",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Dracula"
+  "workbench.iconTheme": "eq-material-theme-icons",
+  "workbench.colorTheme": "Community Material Theme Ocean",
+  "python.createEnvironment.contentButton": "show"
 }
