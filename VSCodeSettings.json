@@ -24,7 +24,7 @@
   "editor.matchBrackets": "always",
   "editor.wordWrap": "bounded",
   "editor.wordWrapColumn": 80,
-  "editor.linkedEditing": true,
+
   "editor.quickSuggestions": {
     "other": true,
     "comments": false,
