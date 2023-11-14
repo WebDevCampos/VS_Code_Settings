@@ -1,0 +1,64 @@
+# Django migrations
+*.pyc
+__pycache__
+db.sqlite3
+/migrations/
+
+# Python env
+*.pyc
+__pycache__
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.pyc
+*.pyo
+__pycache__
+
+# IDE specific files
+.idea/
+.vscode/
+
+# Dependency directories
+pip-wheel-metadata/
+yarn-error.log
+npm-debug.log
+pnpify/
+.pnpm/
+coverage/
+dist/
+
+# Compiled Python bytecode
+*.pyc
+*.pyo
+__pycache__
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Editor specific files
+*.suo
+*.user
+*.sln.docstates
+*.iws
+*.ipr
+*.iws.iml
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# React
+build/
+coverage/
+
+# Vue
+/dist/
+/node_modules/
+npm-debug.log
+yarn-error.log
+
+# PHP
+vendor/
